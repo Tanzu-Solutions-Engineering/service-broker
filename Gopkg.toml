@@ -27,11 +27,10 @@
 
 [[constraint]]
   name = "code.cloudfoundry.org/lager"
-  version = "2.0.0"
 
 [[constraint]]
-  branch = "arbitrary_params"
   name = "github.com/pivotal-cf/brokerapi"
+  version = "v3.0.1"
 
 [prune]
   go-tests = true

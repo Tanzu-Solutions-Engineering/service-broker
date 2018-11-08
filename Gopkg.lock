@@ -2,12 +2,15 @@
 
 
 [[projects]]
-  digest = "1:2fc3d482b7a75c656f8c746bfadbd63bdd91a828209d42425b4f90dad165120c"
+  branch = "master"
+  digest = "1:0ede209ae445be67b35451161753018a108763f46b0b636f015c95a453f7be8b"
   name = "code.cloudfoundry.org/lager"
-  packages = ["."]
+  packages = [
+    ".",
+    "internal/truncate",
+  ]
   pruneopts = "UT"
-  revision = "b152b7147a2a0154109a5194fcc7f4a933283abb"
-  version = "v2.0.0"
+  revision = "dcdeae4588fecb93e694b610ba72f1b8665b0b6b"
 
 [[projects]]
   digest = "1:c79fb010be38a59d657c48c6ba1d003a8aa651fa56b579d959d74573b7dff8e1"
@@ -18,29 +21,31 @@
   version = "v1.1.1"
 
 [[projects]]
-  digest = "1:c661dee65a46d437daf269e5f5f462bd9df6d8e7c9750ad1655fb2cafdb177a6"
+  digest = "1:e73f5b0152105f18bc131fba127d9949305c8693f8a762588a82a48f61756f5f"
   name = "github.com/gorilla/mux"
   packages = ["."]
   pruneopts = "UT"
-  revision = "e444e69cbd2e2e3e0749a2f3c717cec491552bbf"
+  revision = "e3702bed27f0d39777b0b37b664b6280e8ef8fbf"
+  version = "v1.6.2"
 
 [[projects]]
-  branch = "arbitrary_params"
-  digest = "1:33de84bf13c40886bfd4236baf8fb4192644cc3041c456d5d8f68acea75d94ad"
+  digest = "1:deb1932ad3923206b65e4d6432d65a535225a64a5a1620770763c51fb9d3cbfd"
   name = "github.com/pivotal-cf/brokerapi"
   packages = [
     ".",
     "auth",
   ]
   pruneopts = "UT"
-  revision = "3c6889259b98dc489f552cd5a0ebeec117620219"
+  revision = "9ed104edeebff19a9ec70c859e312257ae6c5450"
+  version = "v3.0.3"
 
 [[projects]]
-  digest = "1:840768dcce5f1374a2f6cf7746af174ad4c106c357ffeb8d2505af4a163a2e11"
-  name = "github.com/pivotal-golang/lager"
+  digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"
+  name = "github.com/pkg/errors"
   packages = ["."]
   pruneopts = "UT"
-  revision = "ce9effb2d1062e2d81333f942df0549706901b1b"
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
 
 [solve-meta]
   analyzer-name = "dep"
