@@ -18,22 +18,22 @@ type Broker struct {
 // Services - Service Catalog
 func (b Broker) Services(ctx context.Context) ([]brokerapi.Service, error) {
 
-	plan := brokerapi.ServicePlan{
-		Description: "description",
+	smallPlan := brokerapi.ServicePlan{
+		Description: "small-plan",
 		Free:        &truePointer,
-		Name:        "plan",
+		Name:        "small",
 		Bindable:    &truePointer,
-		ID:          "id",
+		ID:          "small-id",
 	}
 
 	s := brokerapi.Service{
-		ID:            "",
-		Name:          "",
-		Description:   "",
+		ID:            "Pivotal",
+		Name:          "Pivotal Service Plans",
+		Description:   "Service Plan which gives us Pivotal",
 		Bindable:      true,
 		PlanUpdatable: true,
 		Tags:          []string{},
-		Plans:         []brokerapi.ServicePlan{plan},
+		Plans:         []brokerapi.ServicePlan{smallPlan},
 	}
 	return []brokerapi.Service{s}, nil
 }
